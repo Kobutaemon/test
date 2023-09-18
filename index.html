@@ -5,12 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Test Web</title>
+    <title>Overlay Test Web</title>
 </head>
 <body>
-    <h1>Welcome to My Server :)</h1>
-    <div class="p-div">
-        aa
+    <div id="formContainer">
+        <form action="#">
+            <h1>ログインフォーム</h1>
+            <hr>
+            <div id="uiForm">
+                <div class="formField">
+                    <label>ユーザー名</label>
+                    <input type="text" placeholder="ユーザー名" id="username">
+                </div>
+                <div class="formField">
+                    <label>メールアドレス</label>
+                    <input type="text" placeholder="メールアドレス" id="mailAddress">
+                </div>
+                <div class="formField">
+                    <label>パスワード</label>
+                    <input type="text" placeholder="パスワード" id="password">
+                </div>
+                <button class="submitButton">ログイン</button>
+            </div>
+        </form>
     </div>
     <script src="index.js"></script>
 </body>
