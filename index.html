@@ -5,29 +5,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
     <title>Overlay Test Web</title>
 </head>
 <body>
-    <img src="src/finish2a.png" class="d-none">
     <div id="formContainer">
+        <div id="slider">
+            <li><img src="src/finish2a.png" class="d-none" id="overlay-img2a"></li>
+            <li><img src="src/finish2b.png" class="d-none" id="overlay-img2b"></li>
+        </div>
         <form>
             <h1>ログインフォーム</h1>
             <hr>
             <div id="uiForm">
                 <div class="formField">
-                    <label>ユーザー名</label>
-                    <input type="text" placeholder="ユーザー名" id="username">
+                    <p>ユーザー名</p>
+                    <input type="text" placeholder="ユーザー名" id="username" autocomplete="off">
                 </div>
                 <div class="formField">
-                    <label>メールアドレス</label>
-                    <input type="text" placeholder="メールアドレス" id="mailAddress">
+                    <p>メールアドレス</p>
+                    <input type="text" placeholder="メールアドレス" id="mailAddress" autocomplete="off">
                 </div>
                 <div class="formField">
-                    <label>パスワード</label>
-                    <input type="text" placeholder="パスワード" id="password">
+                    <p>パスワード</p>
+                    <input type="text" placeholder="パスワード" id="password" autocomplete="off">
                 </div>
-                <button id="submitButton">ログイン</button>
+                <button id="submitButton" type="button">ログイン</button>
             </div>
         </form>
     </div>

@@ -14,6 +14,12 @@ body{
     align-items: center;
 }
 
+#slider {
+    position: absolute;
+    height: 100%;
+    z-index: -1;
+}
+
 h1 {
     text-align: center;
 }
@@ -52,7 +58,7 @@ h1 {
     outline: none;
 }
 
-.formField label {
+.formField p {
     font-size: 15px;
     font-weight: 600;
     margin-bottom: 3px;
