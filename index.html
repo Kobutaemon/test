@@ -5,11 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <title>Overlay Test Web</title>
 </head>
 <body>
+    <img src="src/finish2a.png" class="d-none">
     <div id="formContainer">
-        <form action="#">
+        <form>
             <h1>ログインフォーム</h1>
             <hr>
             <div id="uiForm">
@@ -25,7 +27,7 @@
                     <label>パスワード</label>
                     <input type="text" placeholder="パスワード" id="password">
                 </div>
-                <button class="submitButton">ログイン</button>
+                <button id="submitButton">ログイン</button>
             </div>
         </form>
     </div>
